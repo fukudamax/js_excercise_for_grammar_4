@@ -9,3 +9,17 @@
 //     - 変数iの値が3の倍数のときは `Fizz`という文字列と、変数iの値をコンソールに出力する。(else ifを使う)
 //     - 変数iの値が5の倍数のときは `Buzz`という文字列と、変数iの値をコンソールに出力する。(else ifを使う)
 //     - 変数iの値が3の倍数でも5の倍数でもないときは特に何もしない
+
+let result = "";
+for (i = 1; i < 100; i++){
+    if(i % 3 === 0 && i % 5 === 0){
+        result="FizzBuzz";
+        console.log(i,result);
+    }else if(i % 3 === 0){
+        result="Fizz";
+        console.log(i,result);
+    }else if(i % 5 === 0){
+        result="Buzz";
+        console.log(i,result);
+    }
+}
